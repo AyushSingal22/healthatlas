@@ -6,6 +6,6 @@ app.set('views',path.join(__dirname,'views') )
 app.get('*',(req,res)=>{
     res.render('home.ejs');
 })
-app.listen(3000,()=>{
+app.listen('healthatlas-c1e3sua2c-optimus2703.vercel.app',()=>{
     console.log("connected");
 })
