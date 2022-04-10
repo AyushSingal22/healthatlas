@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
-const path = require('path'); 
+const path = require('path');
 app.use(express.static('images'));
 const port = process.env.PORT;
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views') )
+app.set('images',path.join(__dirname,'images') )
 app.get('/',(req,res)=>{
     res.render('home.ejs');
 })
