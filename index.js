@@ -1,4 +1,5 @@
 const express = require('express');
+const res = require('express/lib/response');
 const app = express();
 const path = require('path');
 app.use(express.static(path.join(__dirname,'content')));
@@ -14,6 +15,7 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.send("under construction");
 })
+
 app.listen(port || 3000,()=>{
     console.log("connected");
 })  
