@@ -13,7 +13,7 @@ app.get('/',(req,res)=>{
     res.render('home.ejs');
 })
 app.get('/about',(req,res)=>{
-    res.send("under construction");
+    res.send("under  construction");
 })
 
 app.listen(port || 3000,()=>{
